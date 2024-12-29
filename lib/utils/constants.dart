@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class AppConstants {
   // Text Styles
-  static const headerStyle = TextStyle(
+  static const TextStyle headerStyle = TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.bold,
   );
   
-  static const subheaderStyle = TextStyle(
+  static const TextStyle subheaderStyle = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w500,
   );
@@ -24,4 +24,8 @@ class AppConstants {
   static const int minTaskPoints = 10;
   static const int maxTaskPoints = 100;
   static const int defaultTaskPoints = 50;
+
+  static const TextStyle bodyStyle = TextStyle(
+    fontSize: 14,
+  );
 } 

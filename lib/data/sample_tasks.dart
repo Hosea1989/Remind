@@ -7,6 +7,7 @@ final List<Task> sampleTasks = [
     description: 'Prepare and finalize the project presentation for the team meeting',
     dueDate: DateTime.now().add(const Duration(days: 2)),
     points: 100,
+    categoryId: '1',
   ),
   Task(
     id: '2',
@@ -14,6 +15,7 @@ final List<Task> sampleTasks = [
     description: '30 minutes of cardio workout',
     dueDate: DateTime.now().add(const Duration(days: 1)),
     points: 50,
+    categoryId: '3',
   ),
   Task(
     id: '3',
@@ -21,5 +23,6 @@ final List<Task> sampleTasks = [
     description: 'Read one chapter of the current book',
     dueDate: DateTime.now().add(const Duration(days: 1)),
     points: 30,
+    categoryId: '3',
   ),
 ]; 

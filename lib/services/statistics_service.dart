@@ -1,4 +1,4 @@
-import 'package:shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:remind/models/task_model.dart';
 
 class StatisticsService {

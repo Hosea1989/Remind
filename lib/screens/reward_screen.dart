@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:remind/models/reward_model.dart';
+import 'package:remind/widgets/reward_card.dart';
 
 class RewardScreen extends StatelessWidget {
   const RewardScreen({super.key});

@@ -13,31 +13,24 @@ class TaskCategory {
     required this.color,
   });
 
-  // Add some default categories
-  static const List<TaskCategory> defaultCategories = [
+  static final List<TaskCategory> defaultCategories = [
     TaskCategory(
-      id: 'work',
-      name: 'Work',
-      icon: Icons.work,
+      id: '1',
+      name: 'General',
+      icon: Icons.list,
       color: Colors.blue,
     ),
     TaskCategory(
-      id: 'personal',
+      id: '2',
+      name: 'Work',
+      icon: Icons.work,
+      color: Colors.orange,
+    ),
+    TaskCategory(
+      id: '3',
       name: 'Personal',
       icon: Icons.person,
       color: Colors.green,
-    ),
-    TaskCategory(
-      id: 'health',
-      name: 'Health',
-      icon: Icons.favorite,
-      color: Colors.red,
-    ),
-    TaskCategory(
-      id: 'study',
-      name: 'Study',
-      icon: Icons.school,
-      color: Colors.purple,
     ),
   ];
 } 

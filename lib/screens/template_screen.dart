@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:remind/models/template_model.dart';
 import 'package:remind/providers/template_provider.dart';
+import 'package:remind/providers/task_provider.dart';
 import 'package:remind/widgets/template_form_dialog.dart';
-import 'package:remind/models/category_model.dart';
 import 'package:remind/utils/constants.dart';
+import 'package:remind/models/category_model.dart';
 
 class TemplateScreen extends ConsumerWidget {
   const TemplateScreen({super.key});
@@ -161,7 +161,7 @@ class TemplateScreen extends ConsumerWidget {
                                 );
                               } else if (value == 'use') {
                                 final task = template.toTask();
-                                ref.read(taskProvider.notifier).addTask(task);
+                                ref.read(taskListProvider.notifier).addTask(task);
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   const SnackBar(
                                     content: Text('Task created from template'),

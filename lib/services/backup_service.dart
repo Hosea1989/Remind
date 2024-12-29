@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:remind/models/task_model.dart';
 import 'package:remind/models/reward_model.dart';
+import 'package:remind/models/user_profile_model.dart';
 import 'package:remind/services/database_service.dart';
 
 class BackupService {

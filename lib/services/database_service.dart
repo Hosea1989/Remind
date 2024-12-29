@@ -1,5 +1,6 @@
 import 'package:remind/models/task_model.dart';
 import 'package:remind/models/reward_model.dart';
+import 'package:remind/models/user_profile_model.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'dart:convert';
@@ -251,5 +252,31 @@ class DatabaseService {
       'pointsEarned': maps.fold(0, (sum, item) => sum + item['pointsEarned'] as int),
       'rewardsRedeemed': maps.fold(0, (sum, item) => sum + item['rewardsRedeemed'] as int),
     };
+  }
+
+  Future<void> deleteTask(String taskId) async {
+    final db = await database;
+    await db.delete(
+      'tasks',
+      where: 'id = ?',
+      whereArgs: [taskId],
+    );
+  }
+
+  Future<void> updateTask(Task task) async {
+    final db = await database;
+    await db.update(
+      'tasks',
+      {
+        'title': task.title,
+        'description': task.description,
+        'dueDate': task.dueDate.millisecondsSinceEpoch,
+        'points': task.points,
+        'categoryId': task.categoryId,
+        'isCompleted': task.isCompleted ? 1 : 0,
+      },
+      where: 'id = ?',
+      whereArgs: [task.id],
+    );
   }
 } 

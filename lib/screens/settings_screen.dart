@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:remind/utils/constants.dart';
 import 'package:remind/screens/backup_screen.dart';
 import 'package:remind/screens/category_management_screen.dart';
-import 'package:shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 final reminderEnabledProvider = StateNotifierProvider<ReminderEnabledNotifier, bool>((ref) {
   return ReminderEnabledNotifier();

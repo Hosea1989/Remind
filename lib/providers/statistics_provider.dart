@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:remind/services/statistics_service.dart';
+import 'package:remind/models/task_model.dart';
 
 class StatisticsState {
   final int completedTasks;

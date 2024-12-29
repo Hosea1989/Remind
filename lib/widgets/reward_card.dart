@@ -9,27 +9,19 @@ class RewardCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: InkWell(
-        onTap: () {
-          // TODO: Implement reward redemption
-        },
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.card_giftcard,
-              size: 48,
-              color: Theme.of(context).primaryColor,
-            ),
+            const Icon(Icons.card_giftcard, size: 48),
             const SizedBox(height: 8),
             Text(
-              reward?.title ?? 'Sample Reward',
-              style: Theme.of(context).textTheme.titleMedium,
+              reward?.title ?? 'Loading...',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
-            Text(
-              '${reward?.points ?? 100} points',
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
+            Text('${reward?.points ?? 0} points'),
           ],
         ),
       ),

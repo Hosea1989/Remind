@@ -1,7 +1,7 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:remind/models/task_model.dart';
-import 'package:shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ReminderService {
   static final ReminderService _instance = ReminderService._internal();
@@ -47,7 +47,8 @@ class ReminderService {
 
   Future<void> scheduleReminder(Task task) async {
     final prefs = await SharedPreferences.getInstance();
-    if (!prefs.getBool('remindersEnabled') ?? true) return;
+    final remindersEnabled = prefs.getBool('remindersEnabled') ?? true;
+    if (!remindersEnabled) return;
 
     final reminderTime = task.dueDate.subtract(const Duration(hours: 1));
     if (reminderTime.isBefore(DateTime.now())) return;

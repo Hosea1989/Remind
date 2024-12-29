@@ -3,6 +3,7 @@ import 'package:remind/models/task_model.dart';
 import 'package:remind/utils/constants.dart';
 import 'package:uuid/uuid.dart';
 import 'package:intl/intl.dart';
+import 'package:remind/models/task_category.dart';
 
 class TaskDialog extends StatefulWidget {
   final String? initialCategoryId;

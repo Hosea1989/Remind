@@ -2,18 +2,18 @@ class Task {
   final String id;
   final String title;
   final String description;
-  final DateTime dueDate;
-  final int points;
   final String categoryId;
-  bool isCompleted;
+  final int points;
+  final DateTime dueDate;
+  final bool isCompleted;
 
-  Task({
+  const Task({
     required this.id,
     required this.title,
     required this.description,
-    required this.dueDate,
-    required this.points,
     required this.categoryId,
+    required this.points,
+    required this.dueDate,
     this.isCompleted = false,
   });
 
@@ -21,19 +21,31 @@ class Task {
     String? id,
     String? title,
     String? description,
-    DateTime? dueDate,
-    int? points,
     String? categoryId,
+    int? points,
+    DateTime? dueDate,
     bool? isCompleted,
   }) {
     return Task(
       id: id ?? this.id,
       title: title ?? this.title,
       description: description ?? this.description,
-      dueDate: dueDate ?? this.dueDate,
-      points: points ?? this.points,
       categoryId: categoryId ?? this.categoryId,
+      points: points ?? this.points,
+      dueDate: dueDate ?? this.dueDate,
       isCompleted: isCompleted ?? this.isCompleted,
     );
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+      'dueDate': dueDate.millisecondsSinceEpoch,
+      'points': points,
+      'categoryId': categoryId,
+      'isCompleted': isCompleted ? 1 : 0,
+    };
   }
 } 

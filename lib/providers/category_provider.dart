@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:remind/models/category_model.dart';
-import 'package:shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 
 final categoryProvider = StateNotifierProvider<CategoryNotifier, List<TaskCategory>>((ref) {

@@ -13,7 +13,6 @@ class NotificationService {
   Future<void> initialize() async {
     // Initialize timezone database
     tz.initializeTimeZones();
-    final String timeZoneName = tz.local.name;
 
     const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
     const iosSettings = DarwinInitializationSettings(

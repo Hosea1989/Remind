@@ -26,6 +26,7 @@ void main() {
       description: 'Test Description',
       dueDate: DateTime.now(),
       points: 100,
+      categoryId: '1',
     );
 
     await tester.pumpWidget(
