@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:remind/models/category_model.dart';
 import 'package:remind/providers/category_provider.dart';
 import 'package:remind/widgets/category_form_dialog.dart';
 

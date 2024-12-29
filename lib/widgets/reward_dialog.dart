@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:remind/models/reward_model.dart';
-import 'package:remind/utils/constants.dart';
 import 'package:uuid/uuid.dart';
 
 class RewardDialog extends StatefulWidget {

@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:remind/utils/constants.dart';
 import 'package:remind/providers/points_provider.dart';
 import 'package:remind/services/database_service.dart';
-import 'package:intl/intl.dart';
 
 class StatisticsScreen extends ConsumerStatefulWidget {
   const StatisticsScreen({super.key});
