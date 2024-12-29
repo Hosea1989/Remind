@@ -21,6 +21,8 @@ dependencies:
   path_provider: ^2.0.15
   fl_chart: ^0.66.2
   share_plus: ^7.2.1
+  timezone: ^0.9.2
+  flutter_timezone: ^1.0.8
 
 dev_dependencies:
   flutter_test:
@@ -31,10 +33,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  platforms:
-    ios: true
-    android: true
-  
   fonts:
     - family: Poppins
       fonts:

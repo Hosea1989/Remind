@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:remind/services/export_service.dart';
 import 'package:remind/utils/constants.dart';
-import 'package:file_picker/file_picker.dart';
+import 'package:image_picker/image_picker.dart';
 
 class BackupScreen extends StatelessWidget {
   const BackupScreen({super.key});
@@ -22,13 +22,17 @@ class BackupScreen extends StatelessWidget {
             onPressed: () async {
               try {
                 await ExportService().exportToFile();
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Backup created successfully')),
-                );
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Backup created successfully')),
+                  );
+                }
               } catch (e) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text('Error creating backup: $e')),
-                );
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Error creating backup: $e')),
+                  );
+                }
               }
             },
           ),
@@ -61,14 +65,12 @@ class BackupScreen extends StatelessWidget {
               );
 
               if (result == true) {
-                final result = await FilePicker.platform.pickFiles(
-                  type: FileType.custom,
-                  allowedExtensions: ['json'],
-                );
-
+                final picker = ImagePicker();
+                final result = await picker.pickMedia();
+                
                 if (result != null) {
                   final success = await ExportService()
-                      .importFromFile(result.files.single.path!);
+                      .importFromFile(result.path);
                   
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(

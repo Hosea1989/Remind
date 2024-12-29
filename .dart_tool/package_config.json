@@ -86,10 +86,28 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "file_picker",
-      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/file_picker-5.5.0",
+      "name": "file_selector_linux",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.3+2",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "file_selector_macos",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "file_selector_platform_interface",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/file_selector_platform_interface-2.6.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "file_selector_windows",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "fixnum",
@@ -158,6 +176,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "flutter_timezone",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/flutter_timezone-1.0.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/damienhosea/development/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
@@ -170,6 +194,66 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "http",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/http-1.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/http_parser-4.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "image_picker",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "image_picker_android",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+19",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "image_picker_for_web",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "image_picker_ios",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.12+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "image_picker_linux",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "image_picker_macos",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "image_picker_platform_interface",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_platform_interface-2.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "image_picker_windows",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "integration_test",
       "rootUri": "file:///Users/damienhosea/development/flutter/packages/integration_test",
       "packageUri": "lib/",
@@ -180,6 +264,12 @@
       "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/intl-0.19.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/damienhosea/.pub-cache/hosted/pub.dev/js-0.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
     },
     {
       "name": "leak_tracker",
@@ -542,7 +632,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-12-29T22:08:11.642947Z",
+  "generated": "2024-12-29T23:24:01.206165Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/damienhosea/development/flutter",

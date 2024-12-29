@@ -1,8 +1,18 @@
 # This is a generated file; do not edit or check into version control.
-file_picker=/Users/damienhosea/.pub-cache/hosted/pub.dev/file_picker-5.5.0/
+file_selector_linux=/Users/damienhosea/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.3+2/
+file_selector_macos=/Users/damienhosea/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.4+2/
+file_selector_windows=/Users/damienhosea/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+3/
 flutter_local_notifications=/Users/damienhosea/.pub-cache/hosted/pub.dev/flutter_local_notifications-16.3.3/
 flutter_local_notifications_linux=/Users/damienhosea/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-4.0.1/
 flutter_plugin_android_lifecycle=/Users/damienhosea/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.24/
+flutter_timezone=/Users/damienhosea/.pub-cache/hosted/pub.dev/flutter_timezone-1.0.8/
+image_picker=/Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker-1.1.2/
+image_picker_android=/Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_android-0.8.12+19/
+image_picker_for_web=/Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_for_web-3.0.6/
+image_picker_ios=/Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_ios-0.8.12+1/
+image_picker_linux=/Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_linux-0.2.1+1/
+image_picker_macos=/Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_macos-0.2.1+1/
+image_picker_windows=/Users/damienhosea/.pub-cache/hosted/pub.dev/image_picker_windows-0.2.1+1/
 integration_test=/Users/damienhosea/development/flutter/packages/integration_test/
 path_provider=/Users/damienhosea/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
 path_provider_android=/Users/damienhosea/.pub-cache/hosted/pub.dev/path_provider_android-2.2.15/

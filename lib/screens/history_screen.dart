@@ -111,7 +111,7 @@ class _HistoryScreenState extends ConsumerState<HistoryScreen> {
 
           return LineChart(
             LineChartData(
-              gridData: FlGridData(show: false),
+              gridData: const FlGridData(show: false),
               titlesData: FlTitlesData(
                 bottomTitles: AxisTitles(
                   sideTitles: SideTitles(

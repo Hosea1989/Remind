@@ -13,7 +13,7 @@ class TaskCategory {
     required this.color,
   });
 
-  static final List<TaskCategory> defaultCategories = [
+  static const List<TaskCategory> defaultCategories = [
     TaskCategory(
       id: '1',
       name: 'General',
